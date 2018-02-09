@@ -112,55 +112,67 @@ void liftX(int ticks){
 
 task main()
 {
-	//while(1){
-	//	rotate(1,90);
-	//}
 	initializeGyro();
-	liftX(-530);
+	//while(1){
+	//	wait1Msec(100);
+	//	rotate(-1,90);
+	//}
+	/*	liftX(-530);
 	moveStraight(1,1.5,127);
 	liftX(530);
 	rotate(-1,165);
 	moveStraight(1,2.3,127);
 	liftX(-530);// score 20pt
-	moveStraight(-1,1,127);
+	moveStraight(-1,0.8,100);
 	liftX(530);
 	rotate(-1,90);
-	moveStraight(1,1.2,127);
-	rotate(-1,395);
+	moveStraight(1,1.5,100);
+	rotate(-1,35);
 	liftX(-530);
-	moveStraight(1,1.3,127);
+	moveStraight(1,1.3,100);
 	liftX(530);
-	moveStraight(-1,1,127);
-	rotate(-1,170);
-	moveStraight(1,2,127);
-	rotate(-1,70);
-	liftX(-530);//score 10pt
-	//v - rough
-	moveStraight(-1, 0.25, 127);
-	rotate(1,140);
-	moveStraight(1, 1, 90);
-	rotate(1, 90);
-	moveStraight(1, 2.5, 90);
-	liftX(530);
-	moveStraight(-1, 2.25, 90);
-	rotate( 1, 180);
-	liftX(-530); //score 10 pt (3)
-/*
-	initializeGyro();
+	moveStraight(-1,2,100);
+	rotate(-1,135);
+	moveStraight(1,1.95,100);
+	rotate(-1,90);
+	*/	
+	
+	//GOAL THREE
+	//moveStraight(1,0.6,127);
+	//liftX(-530);//score 10pt *
+	/*
+	wait1Msec(50);
+	liftX(150);
+	moveStraight(-1,0.6,115);//Score (9,1)
+	wait1Msec(60);
+	rotate(1,105);
+	liftX(-75);
+	moveStraight(1,2.1,127);
+	wait1Msec(30);
 	liftX(-530);
-	moveStraight(1,2,127);
-	liftX(530); //Pick up 1st goal
-	moveStraight(-1,1,127);
-	rotate(-1,185);
-	moveStraight(1,1,127);
-	liftX(-530); //Score in 10pt
-	moveStraight(-1,0.8,127);
-	rotate(1,85);
-	moveStraight(1,1,127);
-	liftX(550); //Pick up 2nd goal
-	rotate(-1,110);
-	moveStraight(1 ,2.6,127);
-	liftX(-530); //Score in 20pt
-	moveStraight(-1,1,70);
-	rotate(1,90); */
+	wait1Msec(3);
+
+
+	liftX(530);
+	liftX(530);
+	// liftX(530);
+	wait1Msec(10);
+	moveStraight(-1,1.5,127);
+	wait1Msec(100);
+	rotate(-1,155);
+	moveStraight(1,2.6,127);
+
+	liftX(-530);//score 10pt */
+	//GOAL FOUR (3,4) trying to put it into the opposite corner 20 point zone
+	moveStraight(-1, 0.3, 127);
+	liftX(230);
+	moveStraight(-1, 0.7, 127);
+	liftX(-230);
+	rotate(-1, 90);
+	moveStraight(1, 0.2, 127);
+	rotate(-1, 90);
+	moveStraight(1, 1, 127); // SET TO FOUR, no space on mat, should charge on the 4th goal and hopefully snag it into the next zone
+	
+
+
 }
